@@ -10,7 +10,16 @@ import java.util.stream.Stream;
 public class WorkingWithStreams {
 
     @Test
-    void steams() {
+    void steams (){
         List<String> names = List.of("Amigoscode", "Alex", "Zara");
+        Stream<String> stream = names.stream();
+        stream.limit(2)
+                .map(null)
+                .sorted(null)
+                .dropWhile(null)
+                .collect(Collectors.toList());
+
+        String[] namesArray = {};
+        Arrays.stream(namesArray);
     }
 }
